@@ -1,0 +1,62 @@
+/**
+ * @name NonbiriPastel
+ * @author You
+ * @version 1.0
+ * @description のんのん系パステルテーマ
+ */
+
+:root {
+  --bg-main: #f7f3e8;
+  --bg-soft: #e8f3ff;
+  --accent: #f58ca6;
+  --accent-soft: #f3a0a5;
+  --purple-soft: #b8b7d6;
+  --text-main: #444;
+  --text-soft: #666;
+  --radius: 16px;
+}
+
+.app-2CXKsg {
+  background: linear-gradient(
+    to bottom,
+    #dbeeff,
+    #f7f3e8
+  ) !important;
+}
+
+.sidebar-1tnWFu {
+  background: rgba(255,255,255,0.6) !important;
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  margin: 10px;
+}
+
+.containerDefault-YUSmu3:hover {
+  background: var(--accent-soft) !important;
+  border-radius: var(--radius);
+}
+
+.modeSelected-3DmyhH {
+  background: var(--accent) !important;
+  color: white !important;
+  border-radius: var(--radius);
+}
+
+.chat-2ZfjoI {
+  background: rgba(255,255,255,0.7) !important;
+  backdrop-filter: blur(8px);
+}
+
+.scrollableContainer-15eg7h {
+  background: #ffffff !important;
+  border-radius: var(--radius);
+}
+
+.button-38aScr {
+  background: var(--accent) !important;
+  border-radius: var(--radius);
+}
+
+* {
+  color: var(--text-main);
+}
