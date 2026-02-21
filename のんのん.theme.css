@@ -1,3 +1,10 @@
+/**
+ * @name のんのん
+ * @author Rucy
+ * @version 1.0
+ * @description DarkWeb style Non Non theme
+ */
+
 :root {
   --bg-dark: rgba(10, 10, 15, 0.85);
   --bg-darker: rgba(5, 5, 10, 0.95);
