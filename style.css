@@ -1,13 +1,4 @@
-/**
- * @name NonbiriPastel
- * @author You
- * @version 1.0
- * @description のんのん系パステルテーマ
- */
-
 :root {
-  --bg-main: #f7f3e8;
-  --bg-soft: #e8f3ff;
   --accent: #f58ca6;
   --accent-soft: #f3a0a5;
   --purple-soft: #b8b7d6;
@@ -16,44 +7,54 @@
   --radius: 16px;
 }
 
-.app-2CXKsg {
-  background: 
-    url("https://i.imgur.com/ANg4FPB.png") center/cover no-repeat fixed !important;
+.appMount-2yBXZl {
+  background:
+    url("https://i.imgur.com/ANg4FPB.png")
+    center / cover
+    no-repeat
+    fixed !important;
 }
 
-.sidebar-1tnWFu {
+.appMount-2yBXZl::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.35);
+  pointer-events: none;
+}
+
+[class^="sidebar"] {
   background: rgba(255,255,255,0.6) !important;
   backdrop-filter: blur(10px);
   border-radius: var(--radius);
   margin: 10px;
 }
 
-.containerDefault-YUSmu3:hover {
+[class*="containerDefault"]:hover {
   background: var(--accent-soft) !important;
   border-radius: var(--radius);
 }
 
-.modeSelected-3DmyhH {
+[class*="modeSelected"] {
   background: var(--accent) !important;
   color: white !important;
   border-radius: var(--radius);
 }
 
-.chat-2ZfjoI {
+[class^="chat"] {
   background: rgba(255,255,255,0.7) !important;
   backdrop-filter: blur(8px);
 }
 
-.scrollableContainer-15eg7h {
+[class*="scrollableContainer"] {
   background: #ffffff !important;
   border-radius: var(--radius);
 }
 
-.button-38aScr {
-  background: var(--accent) !important;
-  border-radius: var(--radius);
+button {
+  border-radius: var(--radius) !important;
 }
 
-* {
+body {
   color: var(--text-main);
 }
