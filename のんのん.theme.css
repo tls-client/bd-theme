@@ -1,19 +1,22 @@
 /**
  * @name のんのん
  * @author Rucy
- * @version 1.0
- * @description DarkWeb style Non Non theme
+ * @version 1.0.0
+ * @description Dark minimal Non Non theme
  */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 :root {
   --bg-dark: rgba(10, 10, 15, 0.85);
   --bg-darker: rgba(5, 5, 10, 0.95);
   --accent: #b36bff;
-  --accent-glow: 0 0 10px #b36bff;
+  --accent-glow: 0 0 12px #b36bff;
   --radius: 10px;
 }
 
 body {
+  font-family: 'Inter', sans-serif;
   background:
     url("https://i.imgur.com/ANg4FPB.png")
     center / cover
@@ -25,7 +28,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0,0,0,0.7);
   pointer-events: none;
 }
 
@@ -54,7 +57,7 @@ body::before {
 }
 
 [class*="scrollableContainer"] {
-  background: rgba(20,20,25,0.9) !important;
+  background: rgba(20,20,25,0.95) !important;
   border-radius: var(--radius);
 }
 
