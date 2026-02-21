@@ -1,20 +1,12 @@
-/**
- * @name のんのん
- * @author Rucy
- * @version 1.0
- * @description BetterDiscord theme from GitHub
- */
-
 :root {
-  --accent: #f58ca6;
-  --accent-soft: #f3a0a5;
-  --purple-soft: #b8b7d6;
-  --text-main: #444;
-  --text-soft: #666;
-  --radius: 16px;
+  --bg-dark: rgba(10, 10, 15, 0.85);
+  --bg-darker: rgba(5, 5, 10, 0.95);
+  --accent: #b36bff;
+  --accent-glow: 0 0 10px #b36bff;
+  --radius: 10px;
 }
 
-.appMount-2yBXZl {
+body {
   background:
     url("https://i.imgur.com/ANg4FPB.png")
     center / cover
@@ -22,39 +14,40 @@
     fixed !important;
 }
 
-.appMount-2yBXZl::before {
+body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(255,255,255,0.35);
+  background: rgba(0,0,0,0.65);
   pointer-events: none;
 }
 
-[class^="sidebar"] {
-  background: rgba(255,255,255,0.6) !important;
-  backdrop-filter: blur(10px);
+[class*="sidebar"],
+[class*="container"] {
+  background: var(--bg-dark) !important;
+  backdrop-filter: blur(6px);
   border-radius: var(--radius);
-  margin: 10px;
+  margin: 8px;
+}
+
+[class*="chat"] {
+  background: var(--bg-darker) !important;
+  border-radius: var(--radius);
+  margin: 8px;
 }
 
 [class*="containerDefault"]:hover {
-  background: var(--accent-soft) !important;
-  border-radius: var(--radius);
+  background: rgba(179, 107, 255, 0.15) !important;
 }
 
 [class*="modeSelected"] {
-  background: var(--accent) !important;
-  color: white !important;
+  background: rgba(179, 107, 255, 0.25) !important;
+  box-shadow: var(--accent-glow);
   border-radius: var(--radius);
 }
 
-[class^="chat"] {
-  background: rgba(255,255,255,0.7) !important;
-  backdrop-filter: blur(8px);
-}
-
 [class*="scrollableContainer"] {
-  background: #ffffff !important;
+  background: rgba(20,20,25,0.9) !important;
   border-radius: var(--radius);
 }
 
@@ -63,5 +56,5 @@ button {
 }
 
 body {
-  color: var(--text-main);
+  color: #e0e0e0;
 }
