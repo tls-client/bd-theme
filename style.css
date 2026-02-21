@@ -1,3 +1,12 @@
+/**
+ * @name のんのん
+ * @author Rucy
+ * @version 1.0
+ * @description BetterDiscord theme from GitHub
+ */
+
+@import url("https://raw.githubusercontent.com/tls-client/bd-theme/main/style.css");
+
 :root {
   --accent: #f58ca6;
   --accent-soft: #f3a0a5;
